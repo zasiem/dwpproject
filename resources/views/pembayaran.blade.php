@@ -2,6 +2,16 @@
 
 @section('content')
 <div class="container" style="margin-top: 250px; margin-bottom: 200px;">
+
+  @if($data->kode != null)
+  <div class="row justify-content-center text-center mb-5">
+    <div class="col-md-8">
+      <p>Kode pemesanan anda :</p>
+      <h2>{{ $data->kode }}</h2>
+      <p>Silahkan bawa saat acara, See you !</p>
+    </div>
+  </div>
+  @else
   <div class="row justify-content-center text-center mb-5">
     <div class="col-md-8">
       <h1>Form Pembayaran</h1>
@@ -20,7 +30,7 @@
             @csrf
             @if($foto->bukti_pembayaran != null)
             <div class="row">
-              <img src="{{ asset('storage/'.$foto->bukti_pembayaran) }}" alt="" width="100%">
+              <img src="{{ asset('storage/'.$data->bukti_pembayaran) }}" alt="" width="100%">
             </div>
             @endif
             <div class="form-group row">
@@ -42,6 +52,7 @@
       </div>
     </div>
   </div>
+  @endif
 </div>
 @endsection
 

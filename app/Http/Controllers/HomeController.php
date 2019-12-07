@@ -32,9 +32,9 @@ class HomeController extends Controller
 
     public function pemesanan(){
 
-      $foto = Pesanan::where('id_users', Auth::user()->id)->get();
+      $data = Pesanan::where('id_users', Auth::user()->id)->get();
 
-      return view('pembayaran', ['foto' => $foto[0]]);
+      return view('pembayaran', ['data' => $data[0]]);
 
     }
 
