@@ -2,12 +2,10 @@
 
 @section('content')
 <!-- Header -->
-<header class="masthead">
+<header class="masthead" style="background-image: url('img/dwp.jpg')">
   <div class="container">
     <div class="intro-text">
-      <div class="intro-lead-in">Its Your Time!</div>
-      <div class="intro-heading text-uppercase">DWP Project</div>
-      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}">Daftar</a>
+
     </div>
   </div>
 </header>
@@ -18,12 +16,17 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading text-uppercase">Tickets</h2>
-        <h3 class="section-subheading text-muted">Buy Our Tickets</h3>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-12 text-center">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        <img src="{{ asset('img/dwp2.jpg') }}" alt="" height="100%" width="50%">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p>Harga mulai <b>Rp 1.000.000</b></p>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}">Beli Sekarang</a>
       </div>
     </div>
   </div>
