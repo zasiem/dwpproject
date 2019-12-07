@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\User;
 use App\Pesanan;
+use Str;
 
 class HomeController extends Controller
 {
@@ -47,5 +48,32 @@ class HomeController extends Controller
 
       return redirect('/pesanan');
 
+    }
+
+
+    public function verifikasi(){
+
+      if (Auth::user()->role != 'admin') {
+        return redirect('/home');
+      }
+
+      $pesanan = Pesanan::where('bukti_pembayaran', '!=', null)->get();
+
+      return view('verifikasi', ['pesanan' => $pesanan]);
+    }
+
+    public function proses_verifikasi(Request $request){
+      if (Auth::user()->role != 'admin') {
+        return redirect('/home');
+      }
+
+      $kode = Str::upper(Str::random(6));
+
+      Pesanan::where('id', $request->button)
+      ->update([
+        'kode' => $kode,
+      ]);
+
+      return redirect('/verifikasi');
     }
 }

@@ -39,16 +39,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Tickets</a>
+            <a class="nav-link js-scroll-trigger" href="/#services">Tickets</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Line Up</a>
+            <a class="nav-link js-scroll-trigger" href="/#portfolio">Line Up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Timeline</a>
+            <a class="nav-link js-scroll-trigger" href="/#about">Timeline</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#sponsor">Sponsors</a>
+            <a class="nav-link js-scroll-trigger" href="/#sponsor">Sponsors</a>
           </li>
           @if(empty(Auth::user()))
           <li class="nav-item">
@@ -57,9 +57,24 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="{{ route('login') }}">Login</a>
           </li>
-          @else
+          @elseif(Auth::user()->role == 'peserta')
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="{{ url('/pesanan') }}">Pembayaran</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#">{{ Auth::user()->name }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">Logout</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+            </form>
+          </li>
+          @else
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{{ url('/verifikasi') }}">Verifikasi</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#">{{ Auth::user()->name }}</a>

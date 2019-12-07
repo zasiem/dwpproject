@@ -32,7 +32,7 @@
                     <label class="custom-file-label" for="inputGroupFile04">Pilih Foto</label>
                   </div>
                   <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit" >Upload</button>
+                    <button class="btn btn-outline-secondary" type="submit">Upload</button>
                   </div>
                 </div>
               </div>
