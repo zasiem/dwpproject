@@ -59,7 +59,7 @@
           </li>
           @else
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#">Pembayaran</a>
+            <a class="nav-link js-scroll-trigger" href="{{ url('/pesanan') }}">Pembayaran</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#">{{ Auth::user()->name }}</a>
@@ -134,6 +134,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="{{ asset('js/agency.min.js') }}"></script>
+
+  @stack('script')
 
 </body>
 

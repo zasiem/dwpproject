@@ -18,3 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/pesanan', 'HomeController@pemesanan');
+Route::post('/upload-pembayaran', 'HomeController@upload_pembayaran');
