@@ -28,7 +28,7 @@
         <div class="card-body">
           <form method="POST" action="{{ url('/upload-pembayaran') }}" enctype="multipart/form-data">
             @csrf
-            @if($foto->bukti_pembayaran != null)
+            @if($data->bukti_pembayaran != null)
             <div class="row">
               <img src="{{ asset('storage/'.$data->bukti_pembayaran) }}" alt="" width="100%">
             </div>

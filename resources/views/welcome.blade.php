@@ -158,57 +158,92 @@
         <ul class="timeline">
           <li>
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+              <h4>Open
+                <br>Gate
+                <br>!!
+              </h4>
             </div>
             <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>2009-2011</h4>
-                <h4 class="subheading">Our Humble Beginnings</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+              <div class="timeline-heading mt-5">
+                <h4>Open Gate</h4>
+                <h4 class="subheading">17.00</h4>
               </div>
             </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+              <img class="rounded-circle img-fluid" src="{{ asset('/img/feelkoplo.jpg') }}" alt="" style="height:100% !important">
             </div>
             <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>March 2011</h4>
-                <h4 class="subheading">An Agency is Born</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+              <div class="timeline-heading mt-5">
+                <h4>Feel Koplo</h4>
+                <h4 class="subheading">17.15-18.00</h4>
               </div>
             </div>
           </li>
           <li>
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+              <img class="rounded-circle img-fluid" src="{{ asset('/img/marionjola.jpg') }}" alt="" style="height:100% !important">
             </div>
             <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>December 2012</h4>
-                <h4 class="subheading">Transition to Full Service</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+              <div class="timeline-heading mt-5">
+                <h4>Marion Jola</h4>
+                <h4 class="subheading">18.00-18.45</h4>
               </div>
             </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+              <img class="rounded-circle img-fluid" src="{{ asset('/img/danila.jpg') }}" alt="" style="height:100% !important">
             </div>
             <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>July 2014</h4>
-                <h4 class="subheading">Phase Two Expansion</h4>
+              <div class="timeline-heading mt-5">
+                <h4>Danilla Riyadi</h4>
+                <h4 class="subheading">18.45-19.30</h4>
               </div>
-              <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="{{ asset('/img/kuntoaji.jpg') }}" alt="" style="height:100% !important">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading mt-5">
+                <h4>Kunto Aji</h4>
+                <h4 class="subheading">19.30-20.15</h4>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="{{ asset('/img/tulus.jpg') }}" alt="" style="height:100% !important">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading mt-5">
+                <h4>Tulus</h4>
+                <h4 class="subheading">20.15-21.00</h4>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="{{ asset('/img/raisa.jpg') }}" alt="" style="height:100% !important">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading mt-5">
+                <h4>Raisa</h4>
+                <h4 class="subheading">21.00-21.45</h4>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="{{ asset('/img/honne.jpg') }}" alt="" style="height:100% !important">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading mt-5">
+                <h4>Honne</h4>
+                <h4 class="subheading">21.45-22.30</h4>
               </div>
             </div>
           </li>
@@ -236,25 +271,25 @@
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+            <img class="img-fluid d-block mx-auto" src="{{ asset('img/logos/bni.jpg') }}" alt="">
           </a>
         </div>
         <div class="col-md-3 col-sm-6">
           <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+            <img class="img-fluid d-block mx-auto" src="{{ asset('img/logos/hai.jpg') }}" alt="">
           </a>
         </div>
         <div class="col-md-3 col-sm-6">
           <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+            <img class="img-fluid d-block mx-auto" src="{{ asset('img/logos/pocari.jpg') }}" alt="">
           </a>
         </div>
         <div class="col-md-3 col-sm-6">
           <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+            <img class="img-fluid d-block mx-auto" src="{{ asset('img/logos/tehpucuk.jpg') }}" alt="">
           </a>
         </div>
       </div>
     </div>
   </section>
-@endsection
+  @endsection
